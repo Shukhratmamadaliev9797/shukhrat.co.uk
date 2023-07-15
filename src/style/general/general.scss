@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none !important;
+}
+.layout {
+  background-color: #1c1c1c;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #fff;
+}
