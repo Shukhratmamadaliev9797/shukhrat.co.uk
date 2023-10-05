@@ -1,7 +1,9 @@
 import React from "react";
 import Preloader from "../components/Preloader";
+import { useMediaQuery } from "react-responsive";
 
 export default function About() {
+  const isTablet = useMediaQuery({ query: "(max-width: 1200px)" });
   return (
     <div className="about">
       <Preloader />
@@ -52,45 +54,90 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="about__3">
-          <div className="home__2-3">
-            <div className="home__2-3-social">
-              <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
-              <i class="home__2-3-social-icon fa-brands fa-github"></i>
-            </div>
-            <div className="home__2-3-title">
-              <div>
-                <span>STAY WITH ME</span>
-                <h2>Profiles</h2>
+        {isTablet ? (
+          <>
+            <div className="about__tablet">
+              <div className="home__2-3">
+                <div className="home__2-3-social">
+                  <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
+                  <i class="home__2-3-social-icon fa-brands fa-github"></i>
+                </div>
+                <div className="home__2-3-title">
+                  <div>
+                    <span>STAY WITH ME</span>
+                    <h2>Profiles</h2>
+                  </div>
+                  <div>
+                    <img src="/images/logo.png" alt="" />
+                  </div>
+                </div>
               </div>
-              <div>
-                <img src="/images/logo.png" alt="" />
+
+              <div className="home__1-2-2-1">
+                <div className="home__1-2-2-1-sign">
+                  <img src="/images/sign.png" alt="" />
+                </div>
+                <div className="home__1-2-2-1-title">
+                  <div>
+                    <span>MORE ABOUT ME</span>
+                    <h2>Credentials</h2>
+                  </div>
+                  <div>
+                    <img src="/images/logo.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="home__3-2">
+              <i class="home__3-2-icon fa-solid fa-paper-plane"></i>
+              <h1>
+                Let's <br />
+                work <span>together</span>
+              </h1>
+              <img src="/images/logo.png" alt="" />
+            </div>
+          </>
+        ) : (
+          <div className="about__3">
+            <div className="home__2-3">
+              <div className="home__2-3-social">
+                <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
+                <i class="home__2-3-social-icon fa-brands fa-github"></i>
+              </div>
+              <div className="home__2-3-title">
+                <div>
+                  <span>STAY WITH ME</span>
+                  <h2>Profiles</h2>
+                </div>
+                <div>
+                  <img src="/images/logo.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="home__3-2">
+              <i class="home__3-2-icon fa-solid fa-paper-plane"></i>
+              <h1>
+                Let's <br />
+                work <span>together</span>
+              </h1>
+              <img src="/images/logo.png" alt="" />
+            </div>
+            <div className="home__1-2-2-1">
+              <div className="home__1-2-2-1-sign">
+                <img src="/images/sign.png" alt="" />
+              </div>
+              <div className="home__1-2-2-1-title">
+                <div>
+                  <span>MORE ABOUT ME</span>
+                  <h2>Credentials</h2>
+                </div>
+                <div>
+                  <img src="/images/logo.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
-          <div className="home__3-2">
-            <i class="home__3-2-icon fa-solid fa-paper-plane"></i>
-            <h1>
-              Let's <br />
-              work <span>together</span>
-            </h1>
-            <img src="/images/logo.png" alt="" />
-          </div>
-          <div className="home__1-2-2-1">
-            <div className="home__1-2-2-1-sign">
-              <img src="/images/sign.png" alt="" />
-            </div>
-            <div className="home__1-2-2-1-title">
-              <div>
-                <span>MORE ABOUT ME</span>
-                <h2>Credentials</h2>
-              </div>
-              <div>
-                <img src="/images/logo.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );

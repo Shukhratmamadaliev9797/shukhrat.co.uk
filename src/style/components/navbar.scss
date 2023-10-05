@@ -26,6 +26,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 1000px) {
+      display: none;
+    }
     li {
       margin: 0 3rem;
       a {
