@@ -9,7 +9,7 @@
     width: 90%;
   }
   @media only screen and (max-width: 1100px) {
-    width: 98%;
+    width: 92%;
   }
 
   &__1 {
@@ -23,6 +23,27 @@
     @media only screen and (max-width: 850px) {
       grid-template-columns: repeat(1, 1fr);
     }
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 8rem;
+    }
+    @media only screen and (max-width: 550px) {
+      margin-bottom: 7.5rem;
+    }
+    @media only screen and (max-width: 500px) {
+      margin-bottom: 7.2rem;
+    }
+    @media only screen and (max-width: 450px) {
+      margin-bottom: 6.5rem;
+    }
+    @media only screen and (max-width: 400px) {
+      margin-bottom: 6rem;
+    }
+    @media only screen and (max-width: 350px) {
+      margin-bottom: 5.5rem;
+    }
+    @media only screen and (max-width: 300px) {
+      margin-bottom: 5rem;
+    }
     &-1 {
       border: 1px solid #3b3b3b;
       border-radius: 2rem;
@@ -35,6 +56,7 @@
       justify-content: center;
       align-items: center;
       &-content {
+        padding-top: 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 80%;
@@ -49,8 +71,7 @@
         img {
           width: 90%;
           height: 90%;
-          border-top-left-radius: 2rem;
-          border-bottom-right-radius: 2rem;
+          border-radius: 1rem;
           @media only screen and (max-width: 1350px) {
             height: 80%;
           }
@@ -573,6 +594,7 @@
       margin-top: 2rem;
       @media only screen and (max-width: 600px) {
         grid-template-columns: repeat(1, 1fr);
+        // margin-top: 8rem;
       }
       &-1 {
         padding: 3rem;
@@ -710,7 +732,7 @@
       }
       &-title {
         display: flex;
-        color: #fff;
+        color: red;
         justify-content: space-between;
         align-items: center;
         margin-top: 2rem;

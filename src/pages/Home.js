@@ -124,23 +124,25 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Link to="/services" className="home__tablet-2">
-              <div className="home__tablet-2-services">
-                <i class="home__2-2-services-icon fa-solid fa-cubes"></i>
-                <i class="home__2-2-services-icon fa-solid fa-code"></i>
-                <i class="home__2-2-services-icon fa-solid fa-desktop"></i>
-                <i class="home__2-2-services-icon fa-solid fa-mobile-screen-button"></i>
-              </div>
-              <div className="home__2-2-title">
-                <div>
-                  <span>SPECIALIZATION</span>
-                  <h2>Services Offering</h2>
+            <div className="home__tablet-2">
+              <Link to="/services">
+                <div className="home__tablet-2-services">
+                  <i class="home__2-2-services-icon fa-solid fa-cubes"></i>
+                  <i class="home__2-2-services-icon fa-solid fa-code"></i>
+                  <i class="home__2-2-services-icon fa-solid fa-desktop"></i>
+                  <i class="home__2-2-services-icon fa-solid fa-mobile-screen-button"></i>
                 </div>
-                <div>
-                  <img src="/images/logo.png" alt="" />
+                <div className="home__2-2-title">
+                  <div>
+                    <span>SPECIALIZATION</span>
+                    <h2>Services Offering</h2>
+                  </div>
+                  <div>
+                    <img src="/images/logo.png" alt="" />
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
         ) : (
           <div className="home__2">
