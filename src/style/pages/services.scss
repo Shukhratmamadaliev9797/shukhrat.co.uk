@@ -2,12 +2,24 @@
   width: 100%;
   &__container {
     width: 70%;
-    margin: 0 auto;
+    margin: 4rem auto;
+    @media only screen and (max-width: 1500px) {
+      width: 80%;
+    }
+    @media only screen and (max-width: 1300px) {
+      width: 90%;
+    }
+    @media only screen and (max-width: 1100px) {
+      width: 92%;
+    }
   }
   &__1 {
     display: grid;
     grid-template-columns: 30% 70%;
-
+    @media only screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+      margin-bottom: 2rem;
+    }
     &-left {
       border: 1px solid #3b3b3b;
       background-image: radial-gradient(
@@ -18,6 +30,9 @@
       border-radius: 2rem;
       padding: 2rem;
       margin-right: 2rem;
+      @media only screen and (max-width: 1200px) {
+        margin-right: 0rem;
+      }
       ul {
         display: flex;
         flex-direction: column;
@@ -26,9 +41,32 @@
         height: 100%;
         font-size: 2rem;
         margin-left: 2rem;
+        @media only screen and (max-width: 1200px) {
+          flex-direction: row;
+          margin-left: 0rem;
+          flex-wrap: wrap;
+        }
+        li {
+          @media only screen and (max-width: 1200px) {
+            display: block;
+            text-align: center;
+          }
+          @media only screen and (max-width: 800px) {
+            margin: 2rem 3rem;
+          }
+          span {
+            @media only screen and (max-width: 1200px) {
+              display: block;
+              text-align: center;
+            }
+          }
+        }
         .icon {
           margin-right: 3rem;
           font-size: 2.5rem;
+          @media only screen and (max-width: 1200px) {
+            margin-right: 0rem;
+          }
         }
       }
     }
@@ -36,6 +74,16 @@
       h1 {
         font-size: 6rem;
         text-align: center;
+        @media only screen and (max-width: 900px) {
+          font-size: 5rem;
+          margin-bottom: 2rem;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 4rem;
+        }
+        @media only screen and (max-width: 450px) {
+          font-size: 3rem;
+        }
       }
       &-services {
         border: 1px solid #3b3b3b;
@@ -49,6 +97,9 @@
         grid-gap: 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        @media only screen and (max-width: 750px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
       &-box {
         padding: 2rem;
