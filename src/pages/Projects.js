@@ -9,7 +9,7 @@ export default function Projects() {
       <div className="projects__container">
         <h1>Projects</h1>
         <div className="projects__projects">
-          <Macbook title="Youtube App" />
+          <Macbook title="Youtube App" img="" />
           <Macbook title="Youtube App" />
           <Macbook title="Youtube App" />
         </div>

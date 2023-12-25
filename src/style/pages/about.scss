@@ -3,7 +3,7 @@
 
   &__container {
     width: 70%;
-    margin: 0 auto;
+    margin: 0rem auto 4rem;
     @media only screen and (max-width: 1500px) {
       width: 80%;
     }
@@ -54,6 +54,7 @@
       //   display: grid;
       //   grid-template-rows: 20% 80%;
       margin-left: 2rem;
+      height: 100%;
       @media only screen and (max-width: 1000px) {
         margin-left: 0rem;
       }
@@ -87,6 +88,7 @@
       );
       border-radius: 2rem;
       padding: 3rem;
+
       .icon {
         font-size: 8rem;
         color: #9c9a9a;

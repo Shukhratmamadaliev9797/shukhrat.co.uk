@@ -14,7 +14,7 @@ export default function Home() {
           <Link to="/about" className="home__1-1">
             <div className="home__1-1-content">
               <div className="home__1-1-img">
-                <img src="/images/me.jpg" alt="" />
+                <img src="/images/about1.png" alt="" />
               </div>
               <div className="home__1-1-text">
                 <span>A WEB DEVELOPER</span>
@@ -76,7 +76,7 @@ export default function Home() {
               </Link>
               <Link to="/projects" className="home__1-2-2-2">
                 <div className="home__1-2-2-2-project">
-                  <img src="/images/project.png" alt="" />
+                  <img src="/images/projects2.png" alt="" />
                 </div>
                 <div className="home__1-2-2-2-title">
                   <div>
@@ -100,8 +100,8 @@ export default function Home() {
                 </div>
                 <div className="home__2-1-title">
                   <div>
-                    <span>BLOGS</span>
-                    <h2>GFonts</h2>
+                    <span>Resume</span>
+                    <h2>Download</h2>
                   </div>
                   <div>
                     <img src="/images/logo.png" alt="" />
@@ -148,12 +148,12 @@ export default function Home() {
           <div className="home__2">
             <div className="home__2-1">
               <div className="home__2-1-blog">
-                <img src="/images/blog.png" alt="" />
+                <img src="/images/resume5.png" alt="" />
               </div>
               <div className="home__2-1-title">
                 <div>
-                  <span>BLOGS</span>
-                  <h2>GFonts</h2>
+                  <span>Resume</span>
+                  <h2>Download</h2>
                 </div>
                 <div>
                   <img src="/images/logo.png" alt="" />
