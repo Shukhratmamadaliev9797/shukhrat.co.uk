@@ -19,7 +19,8 @@ export default function Home() {
               <div className="home__1-1-text">
                 <span>A WEB DEVELOPER</span>
                 <h1>
-                  SHUKHRAT <br /> MAMADALIEV
+                  SHUKHRAT <br />
+                  MAMADALIEV
                 </h1>
                 <p>I am a Full Stack Developer based in UK</p>
                 <div className="home__1-1-logo">
