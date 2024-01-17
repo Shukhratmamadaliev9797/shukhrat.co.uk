@@ -1,6 +1,7 @@
 import React from "react";
 import Preloader from "../components/Preloader";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   const isTablet = useMediaQuery({ query: "(max-width: 1200px)" });
@@ -143,8 +144,20 @@ export default function Services() {
             <div className="about__tablet">
               <div className="home__2-3">
                 <div className="home__2-3-social">
-                  <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
-                  <i class="home__2-3-social-icon fa-brands fa-github"></i>
+                  <a
+                    href="https://www.linkedin.com/in/shukhrat-mamadaliev-b5423019a/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Shukhratmamadaliev9797"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="home__2-3-social-icon fa-brands fa-github"></i>
+                  </a>
                 </div>
                 <div className="home__2-3-title">
                   <div>
@@ -157,7 +170,7 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="home__1-2-2-1">
+              <Link to="/credentials" className="home__1-2-2-1">
                 <div className="home__1-2-2-1-sign">
                   <img src="/images/sign.png" alt="" />
                 </div>
@@ -170,23 +183,38 @@ export default function Services() {
                     <img src="/images/logo.png" alt="" />
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
-            <div className="home__3-2">
+            <Link to="/contact" className="home__3-2">
               <i class="home__3-2-icon fa-solid fa-paper-plane"></i>
               <h1>
                 Let's <br />
                 work <span>together</span>
               </h1>
               <img src="/images/logo.png" alt="" />
-            </div>
+            </Link>
           </>
         ) : (
           <div className="about__3">
             <div className="home__2-3">
-              <div className="home__2-3-social">
-                <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
-                <i class="home__2-3-social-icon fa-brands fa-github"></i>
+              <div
+                className="home__2-3-social"
+                style={{ marginBottom: "3.5rem" }}
+              >
+                <a
+                  href="https://www.linkedin.com/in/shukhrat-mamadaliev-b5423019a/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/Shukhratmamadaliev9797"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="home__2-3-social-icon fa-brands fa-github"></i>
+                </a>
               </div>
               <div className="home__2-3-title">
                 <div>
@@ -198,15 +226,17 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="home__3-2">
-              <i class="home__3-2-icon fa-solid fa-paper-plane"></i>
-              <h1>
-                Let's <br />
-                work <span>together</span>
-              </h1>
-              <img src="/images/logo.png" alt="" />
+            <div>
+              <Link to="/contact" className="home__3-2">
+                <i class="home__3-2-icon fa-solid fa-paper-plane"></i>
+                <h1>
+                  Let's <br />
+                  work <span>together</span>
+                </h1>
+                <img src="/images/logo.png" alt="" />
+              </Link>
             </div>
-            <div className="home__1-2-2-1">
+            <Link to="/credentials" className="home__1-2-2-1">
               <div className="home__1-2-2-1-sign">
                 <img src="/images/sign.png" alt="" />
               </div>
@@ -219,7 +249,7 @@ export default function Services() {
                   <img src="/images/logo.png" alt="" />
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         )}
       </div>

@@ -14,73 +14,51 @@ export default function Credentials() {
             <p>@shukhratmamadaliev</p>
             <ul>
               <li>
-                <a>
+                <a
+                  href="https://github.com/Shukhratmamadaliev9797"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i class="fa-brands fa-square-github"></i>
                 </a>
               </li>
               <li>
-                <a>
+                <a
+                  href="https://github.com/Shukhratmamadaliev9797"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
               <li>
-                <a>
+                <a
+                  href="https://www.facebook.com/shukhratmamadaliev0969/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i class="fa-brands fa-square-facebook"></i>
                 </a>
               </li>
               <li>
-                <a>
+                <a
+                  href="https://www.linkedin.com/in/shukhrat-mamadaliev-b5423019a/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
               </li>
             </ul>
-            <Link className="credentials__profile-contact">Contact Me</Link>
+            <Link to="/contact" className="credentials__profile-contact">
+              Contact Me
+            </Link>
           </div>
         </div>
         <div className="credentials__right">
-          <div className="credentials__about">
-            <h3>ABOUT ME</h3>
-            <p>
-              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna,
-              porttitor rhoncus dolor purus non enim praesent in elementum sahas
-              facilisis leo, vel fringilla est ullamcorper eget nulla facilisi
-              etisam dignissim diam quis enim lobortis viverra orci sagittis eu
-              volutpat odio facilisis mauris sit.
-            </p>
-            <p>
-              Scelerisque fermentum duisi faucibus in ornare quam sisd sit amet
-              luctussd fav venenatis, lectus magna fringilla zac urna, porttitor
-              rhoncus dolor purus non enim praesent cuz elementum sahas
-              facilisis leot.
-            </p>
-          </div>
-          <div className="credentials__experience">
-            <h3>EXPERIENCE</h3>
-            <div className="credentials__experience-experience">
-              <span>2019 - current</span>
-              <h4>Web Developer Freelancer</h4>
-              <p>
-                Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                urna, porttitor rhoncus dolor purus non enim praesent in
-                elementum sahas facilisis leo, vel fringilla est ullamcorper
-                eget nulla facilisi etisam dignissim diam quis enim lobortis
-                viverra orci sagittis eu volutpat odio facilisis mauris sit.
-              </p>
-            </div>
-            <div className="credentials__experience-experience">
-              <span>2019 - current</span>
-              <h4>Web Developer Freelancer</h4>
-              <p>
-                Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                urna, porttitor rhoncus dolor purus non enim praesent in
-                elementum sahas facilisis leo, vel fringilla est ullamcorper
-                eget nulla facilisi etisam dignissim diam quis enim lobortis
-                viverra orci sagittis eu volutpat odio facilisis mauris sit.
-              </p>
-            </div>
-          </div>
           <div className="credentials__skills">
             <h3>SKILLS</h3>
+            <h4>Frond-End Technologies</h4>
             <div className="credentials__skills-skills">
               <div className="credentials__skills-skill">
                 <img src="/images/html.png" alt="" />
@@ -97,8 +75,24 @@ export default function Credentials() {
               <div className="credentials__skills-skill">
                 <img src="/images/react.png" alt="" />
               </div>
+
+              <div className="credentials__skills-skill">
+                <img src="/images/redux.png" alt="" />
+              </div>
+              <div className="credentials__skills-skill">
+                <img src="/images/sass.png" alt="" />
+              </div>
+              <div className="credentials__skills-skill">
+                <img src="/images/react-bootstrap.png" alt="" />
+              </div>
+            </div>
+            <h4>Back-End Technologies</h4>
+            <div className="credentials__skills-skills">
               <div className="credentials__skills-skill">
                 <img src="/images/node.png" alt="" />
+              </div>
+              <div className="credentials__skills-skill">
+                <img src="/images/expressjs.png" alt="" />
               </div>
               <div className="credentials__skills-skill">
                 <img src="/images/redux.png" alt="" />
@@ -110,6 +104,7 @@ export default function Credentials() {
                 <img src="/images/aws.png" alt="" />
               </div>
             </div>
+            <h4>Others</h4>
           </div>
         </div>
       </div>

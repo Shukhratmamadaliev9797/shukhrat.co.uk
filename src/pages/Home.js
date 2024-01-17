@@ -21,7 +21,7 @@ export default function Home() {
                 <h1>
                   SHUKHRAT <br /> MAMADALIEV
                 </h1>
-                <p>I am a Web Developer and Designer based in London</p>
+                <p>I am a Full Stack Developer based in UK</p>
                 <div className="home__1-1-logo">
                   <img src="/images/logo.png" alt="" />
                 </div>
@@ -76,7 +76,7 @@ export default function Home() {
               </Link>
               <Link to="/projects" className="home__1-2-2-2">
                 <div className="home__1-2-2-2-project">
-                  <img src="/images/projects2.png" alt="" />
+                  <img src="/images/projects.png" alt="" />
                 </div>
                 <div className="home__1-2-2-2-title">
                   <div>
@@ -179,8 +179,20 @@ export default function Home() {
             </Link>
             <div className="home__2-3">
               <div className="home__2-3-social">
-                <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
-                <i class="home__2-3-social-icon fa-brands fa-github"></i>
+                <a
+                  href="https://www.linkedin.com/in/shukhrat-mamadaliev-b5423019a/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/Shukhratmamadaliev9797"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="home__2-3-social-icon fa-brands fa-github"></i>
+                </a>
               </div>
               <div className="home__2-3-title">
                 <div>
