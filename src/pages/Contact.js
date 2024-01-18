@@ -67,24 +67,35 @@ export default function Contact() {
             </li>
           </ul>
         </div>
-        <form className="contact__form">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className="contact__form"
+          netlify
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
           <div className="contact__form-title">
             <h1>
               Let’s work <span>together.</span>
             </h1>
             <img src="/images/logo.png" alt="" />
           </div>
-          <input type="text" placeholder="Name*" />
-          <input type="text" placeholder="Email*" />
-          <input type="text" placeholder="Your Subject*" />
+          <input type="text" name="name" placeholder="Name*" />
+          <input type="email" name="email" placeholder="Email*" />
+          <input type="text" name="subject" placeholder="Your Subject*" />
           <textarea
-            name=""
-            id=""
+            name="message"
             cols="30"
             rows="10"
             placeholder="Your Message*"
           ></textarea>
-          <button>Send Message</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </div>
