@@ -95,16 +95,24 @@ export default function Credentials() {
                 <img src="/images/expressjs.png" alt="" />
               </div>
               <div className="credentials__skills-skill">
-                <img src="/images/redux.png" alt="" />
-              </div>
-              <div className="credentials__skills-skill">
                 <img src="/images/mongo.png" alt="" />
               </div>
               <div className="credentials__skills-skill">
-                <img src="/images/aws.png" alt="" />
+                <img src="/images/socket.png" alt="" />
               </div>
             </div>
             <h4>Others</h4>
+            <div className="credentials__skills-skills">
+              <div className="credentials__skills-skill">
+                <img src="/images/aws.png" alt="" />
+              </div>
+              <div className="credentials__skills-skill">
+                <img src="/images/stripe.png" alt="" />
+              </div>
+              <div className="credentials__skills-skill">
+                <img src="/images/cloudinary.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

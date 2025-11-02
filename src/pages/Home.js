@@ -22,7 +22,7 @@ export default function Home() {
                   SHUKHRAT <br />
                   MAMADALIEV
                 </h1>
-                <p>I am a Full Stack Developer based in UK</p>
+                <p>I am a Full Stack Developer based in Uzbekistan</p>
                 <div className="home__1-1-logo">
                   <img src="/images/logo.png" alt="" />
                 </div>
@@ -37,25 +37,25 @@ export default function Home() {
                     <span>LATEST WORK AND</span> FEATURED
                   </li>
                   <li>
-                    <i class="home__1-2-1-icon fa-solid fa-star-of-life"></i>
+                    <i className="home__1-2-1-icon fa-solid fa-star-of-life"></i>
                   </li>
                   <li>
                     <span>LATEST WORK AND</span> FEATURED
                   </li>
                   <li>
-                    <i class="home__1-2-1-icon fa-solid fa-star-of-life"></i>
+                    <i className="home__1-2-1-icon fa-solid fa-star-of-life"></i>
                   </li>
                   <li>
                     <span>LATEST WORK AND</span> FEATURED
                   </li>
                   <li>
-                    <i class="home__1-2-1-icon fa-solid fa-star-of-life"></i>
+                    <i className="home__1-2-1-icon fa-solid fa-star-of-life"></i>
                   </li>
                   <li>
                     <span>LATEST WORK AND</span> FEATURED
                   </li>
                   <li>
-                    <i class="home__1-2-1-icon fa-solid fa-star-of-life"></i>
+                    <i className="home__1-2-1-icon fa-solid fa-star-of-life"></i>
                   </li>
                 </ul>
               </Marquee>
@@ -111,8 +111,8 @@ export default function Home() {
               </div>
               <div className="home__tablet-1-2">
                 <div className="home__2-3-social">
-                  <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
-                  <i class="home__2-3-social-icon fa-brands fa-github"></i>
+                  <i className="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
+                  <i className="home__2-3-social-icon fa-brands fa-github"></i>
                 </div>
                 <div className="home__2-3-title">
                   <div>
@@ -128,10 +128,10 @@ export default function Home() {
             <div className="home__tablet-2">
               <Link to="/services">
                 <div className="home__tablet-2-services">
-                  <i class="home__2-2-services-icon fa-solid fa-cubes"></i>
-                  <i class="home__2-2-services-icon fa-solid fa-code"></i>
-                  <i class="home__2-2-services-icon fa-solid fa-desktop"></i>
-                  <i class="home__2-2-services-icon fa-solid fa-mobile-screen-button"></i>
+                  <i className="home__2-2-services-icon fa-solid fa-cubes"></i>
+                  <i className="home__2-2-services-icon fa-solid fa-code"></i>
+                  <i className="home__2-2-services-icon fa-solid fa-desktop"></i>
+                  <i className="home__2-2-services-icon fa-solid fa-mobile-screen-button"></i>
                 </div>
                 <div className="home__2-2-title">
                   <div>
@@ -163,10 +163,10 @@ export default function Home() {
             </div>
             <Link to="/services" className="home__2-2">
               <div className="home__2-2-services">
-                <i class="home__2-2-services-icon fa-solid fa-cubes"></i>
-                <i class="home__2-2-services-icon fa-solid fa-code"></i>
-                <i class="home__2-2-services-icon fa-solid fa-desktop"></i>
-                <i class="home__2-2-services-icon fa-solid fa-mobile-screen-button"></i>
+                <i className="home__2-2-services-icon fa-solid fa-cubes"></i>
+                <i className="home__2-2-services-icon fa-solid fa-code"></i>
+                <i className="home__2-2-services-icon fa-solid fa-desktop"></i>
+                <i className="home__2-2-services-icon fa-solid fa-mobile-screen-button"></i>
               </div>
               <div className="home__2-2-title">
                 <div>
@@ -185,14 +185,14 @@ export default function Home() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
+                  <i className="home__2-3-social-icon fa-brands fa-linkedin-in"></i>
                 </a>
                 <a
                   href="https://github.com/Shukhratmamadaliev9797"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="home__2-3-social-icon fa-brands fa-github"></i>
+                  <i className="home__2-3-social-icon fa-brands fa-github"></i>
                 </a>
               </div>
               <div className="home__2-3-title">
@@ -233,7 +233,7 @@ export default function Home() {
             </div>
           </div>
           <Link to="/contact" className="home__3-2">
-            <i class="home__3-2-icon fa-solid fa-paper-plane"></i>
+            <i className="home__3-2-icon fa-solid fa-paper-plane"></i>
             <h1>
               Let's <br />
               work <span>together</span>

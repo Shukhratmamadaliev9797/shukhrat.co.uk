@@ -14,92 +14,97 @@ export default function Projects() {
 
         <div className="projects__projects">
           {data?.projects?.real.map((project, index) => {
-            return <div className="projects__projects-project">
-              <Macbook title="Youtube App" img={project.img} />
-              <div className="projects__projects-project-content">
-                <h2>{project.name}</h2>
-                <p>
-                  {project.description}
-                </p>
-                <h3>Technologies</h3>
-                <div className="projects__projects-project-technologies">
-                  {project.technologies?.map((tech, idx) => { return <img src={`/images/${tech}.png`} alt="" /> })}
+            return (
+              <div className="projects__projects-project">
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  <Macbook title="Youtube App" img={project.img} />
+                </a>
 
-                </div>
-                <div className="projects__projects-project-action">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live{" "}
-                    <span>
-                      <i class="far fa-eye"></i>
-                    </span>
-                  </a>
-                  {project.github ? (<a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github{" "}
-                    <span>
-                      <i class="fa-brands fa-github"></i>
-                    </span>
-                  </a>) : ''}
+                <div className="projects__projects-project-content">
+                  <h2>{project.name}</h2>
+                  <p>{project.description}</p>
+                  <h3>Technologies</h3>
+                  <div className="projects__projects-project-technologies">
+                    {project.technologies?.map((tech, idx) => {
+                      return <img src={`/images/${tech}.png`} alt="" />;
+                    })}
+                  </div>
+                  <div className="projects__projects-project-action">
+                    <a href={project.url} target="_blank" rel="noreferrer">
+                      Live{" "}
+                      <span>
+                        <i class="far fa-eye"></i>
+                      </span>
+                    </a>
+                    {project.github ? (
+                      <a href={project.github} target="_blank" rel="noreferrer">
+                        Github{" "}
+                        <span>
+                          <i class="fa-brands fa-github"></i>
+                        </span>
+                      </a>
+                    ) : (
+                      ""
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
+            );
           })}
-
-
         </div>
         <h1>
           <span>Personal</span> Projects
         </h1>
         <div className="projects__projects">
           {data?.projects?.personal.map((project, index) => {
-            return <div className="projects__projects-project">
-              <Macbook title="Youtube App" img={project.img} />
-              <div className="projects__projects-project-content">
-                <h2>{project.name}</h2>
-                <p>
-                  {project.description}
-                </p>
-                <h3>Technologies</h3>
-                <div className="projects__projects-project-technologies">
-                  {project.technologies?.map((tech, idx) => { return <img src={`/images/${tech}.png`} alt="" /> })}
+            return (
+              <div className="projects__projects-project">
+                <Macbook title="Youtube App" img={project.img} />
+                <div className="projects__projects-project-content">
+                  <h2>{project.name}</h2>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: project.description }}
+                  />
 
+                  <h3>Technologies</h3>
+                  <div className="projects__projects-project-technologies">
+                    {project.technologies?.map((tech, idx) => {
+                      return <img src={`/images/${tech}.png`} alt="" />;
+                    })}
+                  </div>
+                  <div className="projects__projects-project-action">
+                    <a href={project.url} target="_blank" rel="noreferrer">
+                      Live{" "}
+                      <span>
+                        <i class="far fa-eye"></i>
+                      </span>
+                    </a>
+                    {project.github ? (
+                      <a href={project.github} target="_blank" rel="noreferrer">
+                        Github{" "}
+                        <span>
+                          <i class="fa-brands fa-github"></i>
+                        </span>
+                      </a>
+                    ) : (
+                      ""
+                    )}
+
+                    {project.admin ? (
+                      <a href={project.admin} target="_blank" rel="noreferrer">
+                        Admin{" "}
+                        <span>
+                          <i class="fa-solid fa-user-tie"></i>
+                        </span>
+                      </a>
+                    ) : (
+                      ""
+                    )}
+                  </div>
                 </div>
-                <div className="projects__projects-project-action">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live{" "}
-                    <span>
-                      <i class="far fa-eye"></i>
-                    </span>
-                  </a>
-                  {project.github ? (<a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github{" "}
-                    <span>
-                      <i class="fa-brands fa-github"></i>
-                    </span>
-                  </a>) : ''}
-
-                </div>
-
               </div>
-            </div>
+            );
           })}
-
-
         </div>
       </div>
     </div>
