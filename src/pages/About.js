@@ -19,18 +19,15 @@ export default function About() {
               <i class="icon fa-brands fa-uikit"></i>
               <h2>Shukhrat Mamadaliev</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                perferendis dolorem asperiores minima facere laborum quos ut
-                nemo, tenetur quaerat laboriosam corporis impedit nostrum
-                commodi itaque maxime rerum neque excepturi. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Veniam, laudantium
-                maxime. Commodi exercitationem alias perspiciatis inventore
-                eveniet! Dolorum doloribus veniam possimus natus dolore
-                molestias amet provident cumque ipsum, aliquam iusto! Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-                dolores atque ipsa suscipit, dolor facilis ratione. Voluptatibus
-                ex commodi sint necessitatibus similique sit error non? Nemo qui
-                totam dolores perspiciatis.
+                Web Developer with hands-on experience building responsive,
+                clean, and user-friendly web pages. Enjoys working in
+                collaborative teams, communicates clearly, and is always open to
+                feedback. Naturally curious and consistently learning new tools,
+                frameworks, and best practices to improve code quality,
+                performance, and overall project outcomes. Passionate about
+                turning ideas into smooth, functional, and visually appealing
+                digital experiences. Always motivated to take on new challenges
+                and contribute to meaningful projects.
               </p>
             </div>
           </div>

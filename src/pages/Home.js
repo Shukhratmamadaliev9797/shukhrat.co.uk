@@ -96,20 +96,20 @@ export default function Home() {
           <div className="home__tablet">
             <div className="home__tablet-1">
               <div className="home__tablet-1-1">
-                {/* <a href="/cv/cv.pdf"> */}
-                <div className="home__tablet-1-1-blog">
-                  <img src="/images/blog.png" alt="" />
-                </div>
-                <div className="home__2-1-title">
-                  <div>
-                    <span>Resume</span>
-                    <h2>Download</h2>
+                <a href="/cv/cv.pdf">
+                  <div className="home__tablet-1-1-blog">
+                    <img src="/images/resume5.png" alt="" />
                   </div>
-                  <div>
-                    <img src="/images/logo.png" alt="" />
+                  <div className="home__2-1-title">
+                    <div>
+                      <span>Resume</span>
+                      <h2>Download</h2>
+                    </div>
+                    <div>
+                      <img src="/images/logo.png" alt="" />
+                    </div>
                   </div>
-                </div>
-                {/* </a> */}
+                </a>
               </div>
               <div className="home__tablet-1-2">
                 <div className="home__2-3-social">
