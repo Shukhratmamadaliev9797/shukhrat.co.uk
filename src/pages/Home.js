@@ -98,7 +98,7 @@ export default function Home() {
               <div className="home__tablet-1-1">
                 <a href="/cv/cv.pdf">
                   <div className="home__tablet-1-1-blog">
-                    <img src="/images/resume5.png" alt="" />
+                    <img src="/images/resume5.png" alt="" target="_blank" />
                   </div>
                   <div className="home__2-1-title">
                     <div>
