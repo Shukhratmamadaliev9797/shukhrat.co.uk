@@ -82,6 +82,9 @@ export default function Contact() {
         >
           <input type="hidden" name="form-name" value="contact" />
 
+          {/* ✅ Netlify redirect back to contact page */}
+          <input type="hidden" name="redirect" value="/contact" />
+
           {/* Netlify bot field */}
           <p hidden>
             <label>
@@ -91,7 +94,7 @@ export default function Contact() {
 
           <div className="contact__form-title">
             <h1>
-              Let’s work <span>together.</span>
+              Let’s work <span>together</span>
             </h1>
             <img src="/images/logo.png" alt="" />
           </div>
