@@ -11,90 +11,102 @@ export default function Contact() {
           <ul className="contact__info-info">
             <li>
               <div className="contact__info-info-icon">
-                <i class="fa-regular fa-envelope"></i>
+                <i className="fa-regular fa-envelope"></i>
               </div>
               <div className="contact__info-info-text">
-                <span>MAIL US</span>
+                <span>MAIL</span>
                 <p>
-                  Shukhratmamadaliev
+                  Shukhratmamadaliev.dev
                   <br />
                   @gmail.com
                 </p>
               </div>
             </li>
+
             <li>
               <div className="contact__info-info-icon">
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
               </div>
               <div className="contact__info-info-text">
-                <span>CONTACT US</span>
+                <span>CONTACT</span>
                 <p>
-                  07523230970
+                  +99870 106 27 29
                   <br />
-                  07732297254
+                  +99894 171 14 38
                 </p>
               </div>
             </li>
+
             <li>
               <div className="contact__info-info-iconlast">
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
               </div>
               <div className="contact__info-info-text">
                 <span>LOCATION</span>
                 <p>
-                  Monthope Rd, <br />
-                  London
+                  Namangan, <br />
+                  Uzbekistan
                 </p>
               </div>
             </li>
           </ul>
+
           <h2>SOCIAL INFO</h2>
           <ul className="contact__info-social">
             <li>
               <a>
-                <i class="fa-brands fa-square-github"></i>
+                <i className="fa-brands fa-square-github"></i>
               </a>
             </li>
             <li>
               <a>
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </a>
             </li>
             <li>
               <a>
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </a>
             </li>
           </ul>
         </div>
+
+        {/* ✅ Netlify form */}
         <form
           name="contact"
           method="POST"
           data-netlify="true"
-          className="contact__form"
           netlify
+          action="/"
+          className="contact__form"
         >
           <input type="hidden" name="form-name" value="contact" />
+
+          {/* Netlify bot field */}
           <p hidden>
             <label>
               Don’t fill this out if you're human: <input name="bot-field" />
             </label>
           </p>
+
           <div className="contact__form-title">
             <h1>
               Let’s work <span>together.</span>
             </h1>
             <img src="/images/logo.png" alt="" />
           </div>
-          <input type="text" name="name" placeholder="Name*" />
-          <input type="email" name="email" placeholder="Email*" />
+
+          <input type="text" name="name" placeholder="Name*" required />
+          <input type="email" name="email" placeholder="Email*" required />
           <input type="text" name="subject" placeholder="Your Subject*" />
           <textarea
             name="message"
             cols="30"
             rows="10"
             placeholder="Your Message*"
+            required
           ></textarea>
+
           <button type="submit">Send Message</button>
         </form>
       </div>
